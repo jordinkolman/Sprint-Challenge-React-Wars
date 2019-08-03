@@ -1,5 +1,10 @@
 import React from 'react';
 import './App.css';
+import CharacterGrid from './components/CharacterGrid.js'
+import {Container, Header} from 'semantic-ui-react'
+
+
+// https://swapi.co/api/people
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -10,9 +15,10 @@ const App = () => {
   // sync up with, if any.
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
-    </div>
+    <Container className="App">
+      <Header className="Header" style ={{fontSize: '3rem'}}>React Wars</Header>
+      <CharacterGrid />
+    </Container>
   );
 }
 
